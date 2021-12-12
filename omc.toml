@@ -1,0 +1,11 @@
+# Demo config file for OMC cron tasks
+
+[[task]]
+name = "Im alive"
+command = "echo 'im alive'"
+interval = {second = 3}
+
+[[task]]
+name = "Hello world"
+command = "echo 'hello'"
+interval = {second = 10}

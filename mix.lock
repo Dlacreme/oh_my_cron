@@ -1,0 +1,3 @@
+%{
+  "toml_elixir": {:hex, :toml_elixir, "2.0.1", "880d5d77e710791671faeaa60996a10ecba0fb6ef539271db162da9f3016d7a1", [:mix], [], "hexpm", "bb365dadbb280fee3363e1b3f5e818d774b69e2c59b0e7ab63959385a9405cfd"},
+}
