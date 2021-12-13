@@ -2,10 +2,12 @@
 
 [[task]]
 name = "Im alive"
-command = "echo 'im alive'"
 interval = {second = 3}
+command = "echo"
+params = ["i'am alive"]
 
 [[task]]
-name = "Hello world"
-command = "echo 'hello'"
+name = "list folder"
 interval = {second = 10}
+command = "ls"
+params = ['-a', '-l']

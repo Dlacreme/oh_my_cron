@@ -8,7 +8,9 @@ defmodule OMC.Application do
   def start(_type, _args) do
     children = [
       # Loads and store the tasks
-      OMC.Tasks.Agent.child_spec([Application.fetch_env!(:oh_my_cron, :tasks_pathname)])
+      OMC.Tasks.Agent.child_spec([Application.fetch_env!(:oh_my_cron, :tasks_pathname)]),
+      OMC.Runner.DynamicSupervisor,
+      OMC.Runner.child_spec([])
     ]
 
     opts = [strategy: :one_for_one, name: OMC.Supervisor]
